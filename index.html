@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <title>Clothing store</title>
+	<style>
+/*body background color*/
+body {
+  background-image:url(https://thumbs.dreamstime.com/z/pretty-dress-background-24404055.jpg);
+  margin:2px;
+  border:2px solid maroon;
+}
+/*header background color*/
+.header {
+  background-color: rgb(11,31,2);
+}
+/*styling the header menu*/
+a {
+  text-decoration: none;
+  color: yellow;
+}
+/*styling the name */
+#vp {
+  color: rgb(6,2,31);
+  font-family: cursive;
+  background: orange;
+}
+/*styling the heading*/
+h2{
+  color:white;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+/*styling the index*/
+.index {
+  font-weight: bold;
+  font-size: 35px;
+  color: darkgreen;
+  font-family: monospace;
+  text-transform: Capitalize;
+  padding-left: 100px;
+}
+/*styling the passage*/
+.passage {
+  font-size: 20px;
+  color: rgb(12,5,51);
+  position: absolute;
+  overflow: auto;
+  top: 130px;
+  left: 50%;
+  text-align: justify;
+  padding-right:15px;
+}
+/*styling the strong tag*/
+strong {
+  color: red;
+}
+/*styling the em tag*/
+em {
+  color: rgb(122,70,15);
+}
+/*image styles*/
+img {
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  top: 15%;
+  bottom: 50%;
+  right: 50%;
+  background-color: transparent;
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 150px;
+}
+/*home tab styling*/
+#home {
+  position: absolute;
+  top: 10px;
+  left: 600px;
+  color: blue;
+}
+/*about tab styling*/
+#about {
+  position: absolute;
+  top: 10px;
+  left: 700px;
+  color: maroon;
+}
+/*login tab styling*/
+#login {
+  position: absolute;
+  top: 10px;
+  left: 800px;
+  color: maroon;
+}
+/*cart tab styling*/
+#cart {
+  position: absolute;
+  top: 10px;
+  left: 900px;
+  color: maroon;
+  padding-left: 10px;
+}
+/*contact tab styling*/
+#contact {
+  position: absolute;
+  top: 10px;
+  left: 1000px;
+  color: maroon;
+  padding-left: 10px;
+}
+/*change color of home,about,cart,login,contact on hover*/
+#home:hover,
+#about:hover,
+#cart:hover,
+#login:hover,
+#contact:hover {
+  background-color: grey;
+}
+/* Place the navbar , and make it stick */
+.navbar {
+  background-color: honeydew;
+  overflow: hidden;
+  position: relative;
+  top: 10px;
+  width: 100%;
+  font-weight:bold;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: indigo;
+  text-align: center;
+  padding: 10px 10px 5px 150px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: hotpink;
+  color: black;
+}
+/*change the color of list on hover*/
+li:hover{
+  color:red;
+}
+/*styling the table heading*/
+th {
+  font-size: 20px;
+  padding-right: 100px;
+  padding-bottom: 15px;
+}
+/*styling the button type box*/
+#button {
+  color: purple;
+  font-weight: bold;
+  background: blanchedalmond;
+  border: 1px solid red;
+  padding: 10px;
+}
+/*styling the footer details*/
+.footer {
+  padding-left:10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: rgb(11,31,2);
+  color: white;
+  text-align: left;
+}
+/*change the color of login button on hover*/
+#button:hover {
+  background: hotpink;
+}
+/*styling the phone number details*/
+#ph_no {
+  color: white;
+  font-weight: bold;
+  background: transparent;
+  border: 1px solid red;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+/*changing menu heading to uppercase*/
+#uppercase {
+  width:100%;
+  padding-left:100px;
+  color: maroon;
+  text-transform: Capitalize;
+  font-size: 25px;
+  background: transparent;
+  text-align: center;
+  text-decoration:underline;
+}
+/*changing the image style*/
+#saree-img,
+#womenwear-img,
+#menwear-img,
+#kidswear-img{
+  padding-top:4px;
+  padding-left:100px;
+  height: 100px;
+  width:200px;
+}
+/*styling the menu details*/
+.menu{
+  width:100%;
+  padding: 3px;
+ background:honeydew; 
+}
+/*styling the list in menu*/
+ul {
+  color: darkblue;
+  font-weight: bold;
+  padding-left: 150px;
+  font-size:20px;
+}
+
+</style>
+  </head>
+
+  <body>
+  <!--Header starts here-->
+  <div class="header">
+    <header>
+      <h2><span id="vp">VP</span> Boutique</h2>
+      <h4 id="home"><a href="#home-link">Home</a></h4>
+      <h4 id="about"><a href="#about-link">About Us</a></h4>
+      <h4 id="login"><a href="">Login|Sign Up</a></h4>
+      <h4 id="cart"><a href="">Add to Cart</a></h4>
+      <h4 id="contact"><a href="#locator">Contact Us:<span id="ph_no">+45 1234 0000</span></a>
+       </h4>
+    </header>
+  </div>
+  <!--navigation bar about menu-->
+  <div class="navbar">
+    <a href="#sarees-hg">Sarees</a>
+    <a href="#womenwear-hg">Women's Wear</a>
+    <a href="#menwear-hg">Men's wear</a>
+    <a href="#kidswear-hg">Kids wear</a>
+  </div>
+  <!-- Describing about index-->
+  <div class="index">
+    <p id="home-link"> We are here <br>to design your dreams
+    </p>
+  </div>
+  <!--Paragraph about the boutique-->
+  <div class="passage">
+    <p id="about-link">VP boutique is a silk paradise that is home to gorgeous <strong>handcrafted pure silk sarees</strong> from the beautiful town of <em>kanchipuram</em>. Our <strong>ready-made</strong> fashion store stands tall in salem with our other branches in kanchipuram, hosur and namakkal. True to the authenticity of the heritage rich kanchipuram silk sarees for wedding, our specializations include <em>cotton sarees, designer sarees, silk cotton sarees, nine yards silk sarees, soft silk sarees and lightweight silk sarees</em>.
+    </p>
+  </div>
+  <!--web page main image-->
+  <div class="container">
+    <img src="https://i.pinimg.com/originals/bf/29/02/bf2902c23d05989de5d602ba08c5f7c8.jpg" alt="cloth_store" width="100%" height="400px">
+    <!--Text in the image-->
+    <div class="text-block">
+      <h3>Fashion is the armor to survive the reality of everyday life...</h3>
+    </div>
+  </div>
+  <!--Describing main menu using table and list-->
+  <div class="menu">
+    <table>
+      <thead>
+        <tr>
+          <th id="sarees-hg">
+            <p id="uppercase">Sarees</p>
+          </th>
+          <th id="womenwear-hg">
+            <p id="uppercase">Women’s wear</p>
+          </th>
+          <th id="menwear-hg">
+            <p id="uppercase">Men’s wear</p>
+          </th>
+          <th id="kidswear-hg">
+            <p id="uppercase">Kid’s wear</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://5.imimg.com/data5/QQ/VP/MY-64155842/kanjivaram-tussar-silk-saree-500x500.jpg" alt="saree-pics" id="saree-img">
+            
+          </td>
+          <td>
+            <img src="https://static.fibre2fashion.com/Newsresource/images/275/shutterstock-498932230_286830.jpg" alt="womens-pics" width="200px" id="womenwear-img">
+              
+            </td>
+          <td>
+            <img src=" https://tobuz-dev-bkt.s3.amazonaws.com/15196606286601519660628659e7te748517231009391793.jpg " alt="men-wear" width="300px" id="menwear-img">
+              
+            </td>
+          <td>
+            <img src="https://i.pinimg.com/originals/af/ca/fc/afcafc670aa4118b648a2ca0f406989c.jpg " alt="kidswear-pics" width="300px" id="kidswear-img">            </td>
+
+        </tr>
+        <tr>
+          <td>
+            <!--Using List type to show types of dresses-->
+            <ul>
+              <li>Silk Sarees</li>
+              <li>Silk Cotton Sarees</li>
+              <li>Cotton nine yards</li>
+              <li>Designer Sarees</li>
+              <li>Casual wear</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Vintage fashion style.</li>
+              <li>Lehenga</li>
+              <li>Kurtis</li>
+              <li>Jeans & Tops</li>
+              <li>Readymade salwar</li>
+              <li>Maxi dress</li>
+
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Vintage fashion style.</li>
+              <li>Silk cotton shirt</li>
+              <li>Pure silk and cotton dhotis</li>
+              <li>Jeans & Tops</li>
+              <li>Readymade shirt & pants</li>
+              <li>Party wear</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Party wear</li>
+              <li>Casual wear</li>
+              <li>Ethnic wear</li>
+              <li>Summer wear</li>
+              <li>Jeans & tops</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<!--Footer details added-->
+  <div class="footer">
+    <footer>
+      <table>
+        <thead>
+          <tr>
+            <th> Features</th>
+            <th>Company</th>
+            <th id="locator">Store Locator</th>
+            <th>Customer Support</th>
+            <th><span id="insta"> Sign up for Email updates</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Free shipping across Denmark</td>
+            <td>Online Rewards Program</td>
+            <td> VP Boutique </td>
+            <td> Email: Online@vpboutique.dk</td>
+            <td><span id="button">Please login</span></td>
+          </tr>
+          <tr>
+            <td> International Shipping Available</td>
+            <td>Shipping Policy</td>
+            <td>13,Rolfsvej</td>
+            <td> Follow us on: facebook, twitter and Instagram</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>All Major Debit/Credit card available</td>
+            <td>Refund</td>
+            <td>2300, Copenhagen</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Our Branches: Copenhagen, Malmo</td>
+            <td>Cancellation Policy</td>
+            <td>Denmark</td>
+            <td> </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </footer>
+  </div>
+</body>
+
+</html>
